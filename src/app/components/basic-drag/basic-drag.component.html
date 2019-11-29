@@ -1,31 +1,31 @@
 <h2>Drag and Drop</h2>
-<div id="div1" (drop)="drop($event)" (dragover)="allowDrop($event)">
 
-  <img src="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg?auto=compress&cs=tinysrgb&h=350"
-    draggable="true" (dragstart)="drag($event)" id="drag1" width="88" height="31">
-</div>
-
-<div id="div2" (drop)="drop($event)" (dragover)="allowDrop($event)">
-</div>
-
-
-<br>
-
-<div style="width: 100%; display: flex;">
-<div class="employeeContainer">
-  <ul>
-    <li draggable="true" id="li1" (dragstart)="drag($event)">vijay sahu</li>
-    <li draggable="true" id="li2" (dragstart)="drag($event)">Susmita Sahoo</li>
-    <li draggable="true" id="li3" (dragstart)="drag($event)">Harinder Sahu</li>
-    <li draggable="true" id="li4" (dragstart)="drag($event)">Shilpi Verma Sahu</li>
-  </ul>
-</div>
-
-<div class="employeeContainer">
-
-  <ul (drop)="drop($event)" (dragover)="allowDrop($event)" id="ulContainer">
-    <li>Shubham Bahuguna</li>
-  </ul>
+<div class="container">
+  <div class="employeeContainer">
+    <ul (drop)="drop($event)" (dragover)="allowDrop($event)">
+      <li draggable="true" id="li3" (dragstart)="drag($event)">HTML</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">CSS</li>
+      <li draggable="true" id="li1" (dragstart)="drag($event)">ASP.NET MVC</li>
+      <li draggable="true" id="li2" (dragstart)="drag($event)">jQuery</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">.NET Core API</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">Angular 2+</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">c#</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">LINQ</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">Entity-Framework</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">SQL Server</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">ADO.NET</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">DevOps</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">Kubernates</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">JIRA</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">GIT</li>
+      <li draggable="true" id="li4" (dragstart)="drag($event)">TFS</li>
+    </ul>
+  </div>
   
-</div>
+  <div class="employeeContainer">
+  
+    <ul  (drop)="drop($event)" (dragover)="allowDrop($event)" id="ulContainer">
+      <li draggable="true">Shubham Bahuguna</li>
+    </ul>
+  </div>
 </div>
