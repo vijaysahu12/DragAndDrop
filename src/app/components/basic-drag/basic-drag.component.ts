@@ -22,7 +22,11 @@ export class BasicDragComponent implements OnInit {
 
   drop(ev) {
     ev.preventDefault();
-    const data = ev.dataTransfer.getData('liItem');
-    ev.target.appendChild(document.getElementById(data));
+    const elementId = ev.dataTransfer.getData('liItem');
+    if (ev.target.tagName === 'UL') {
+      ev.target.appendChild(document.getElementById(elementId));
+    } else {
+      ev.target.parentElement.appendChild(document.getElementById(elementId));
+    }
   }
 }
