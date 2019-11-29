@@ -1,0 +1,61 @@
+#div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+
+
+
+.employeeContainerLeft {
+    width: 50%;
+display: inline-block;
+height: auto;
+}
+
+.employeeContainerLeft > ul{
+    width: 50%;
+    padding: 2px;
+    display: inline-table;
+}
+
+
+.employeeContainerLeft > ul > li {
+    height:20px;
+    padding: 5px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: 700;
+    background: darkolivegreen;
+}
+
+
+.employeeContainerLeft > ul > li:hover{
+    background: darkorange;
+}
+
+
+.employeeContainerRight{ 
+    height: auto;
+    width: 50%;
+    display: inline-block;
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+
+.employeeContainerRight > ul > li {
+    height:20px;
+    padding: 5px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: 700;
+    background: darkolivegreen;
+}
+ 

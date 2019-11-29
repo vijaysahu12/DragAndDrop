@@ -1,0 +1,36 @@
+<h2>Drag and Drop</h2>
+<div id="div1" (drop)="drop($event)" (dragover)="allowDrop($event)">
+
+  <img src="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg?auto=compress&cs=tinysrgb&h=350"
+    draggable="true" (dragstart)="drag($event)" id="drag1" width="88" height="31">
+</div>
+
+
+
+<div id="div2" (drop)="drop($event)" (dragover)="allowDrop($event)">
+</div>
+
+
+<br>
+
+<div class="employeeContainerLeft">
+
+  <ul>
+    <li draggable="true">vijay sahu</li>
+    <li draggable="true">Susmita Sahoo</li>
+    <li draggable="true">Harinder Sahu</li>
+    <li draggable="true">Shilpi Verma Sahu</li>
+  </ul>
+</div>
+
+
+
+
+
+<div class="employeeContainerRight">
+
+  <ul>
+    <li>Shubham Bahuguna</li>
+  </ul>
+  
+</div>
