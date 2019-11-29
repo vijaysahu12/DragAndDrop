@@ -5,32 +5,27 @@
     draggable="true" (dragstart)="drag($event)" id="drag1" width="88" height="31">
 </div>
 
-
-
 <div id="div2" (drop)="drop($event)" (dragover)="allowDrop($event)">
 </div>
 
 
 <br>
 
-<div class="employeeContainerLeft">
-
+<div style="width: 100%; display: flex;">
+<div class="employeeContainer">
   <ul>
-    <li draggable="true">vijay sahu</li>
-    <li draggable="true">Susmita Sahoo</li>
-    <li draggable="true">Harinder Sahu</li>
-    <li draggable="true">Shilpi Verma Sahu</li>
+    <li draggable="true" id="li1" (dragstart)="drag($event)">vijay sahu</li>
+    <li draggable="true" id="li2" (dragstart)="drag($event)">Susmita Sahoo</li>
+    <li draggable="true" id="li3" (dragstart)="drag($event)">Harinder Sahu</li>
+    <li draggable="true" id="li4" (dragstart)="drag($event)">Shilpi Verma Sahu</li>
   </ul>
 </div>
 
+<div class="employeeContainer">
 
-
-
-
-<div class="employeeContainerRight">
-
-  <ul>
+  <ul (drop)="drop($event)" (dragover)="allowDrop($event)" id="ulContainer">
     <li>Shubham Bahuguna</li>
   </ul>
   
+</div>
 </div>
