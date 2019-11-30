@@ -7,31 +7,35 @@
   <div class="empContainer">
       <div class="employeeContainer">
         <div class="listHeader">Skills List</div>
-          <ul (drop)="drop($event)" (dragover)="allowDrop($event)">
-            <li draggable="true" id="li3" (dragstart)="drag($event)">HTML</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">CSS</li>
-            <li draggable="true" id="li1" (dragstart)="drag($event)">ASP.NET MVC</li>
-            <li draggable="true" id="li2" (dragstart)="drag($event)">jQuery</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">.NET Core API</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">Angular 2+</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">c#</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">LINQ</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">Entity-Framework</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">SQL Server</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">ADO.NET</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">DevOps</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">Kubernates</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">JIRA</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">GIT</li>
-            <li draggable="true" id="li4" (dragstart)="drag($event)">TFS</li>
+          
+        
+        <ul (drop)="drop($event)" (dragover)="dragover($event)">
+
+
+            <li draggable="true" id="li3" (dragstart)="dragstart($event)">HTML</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">CSS</li>
+
+
+            <li draggable="true" id="li1" (dragstart)="dragstart($event)">ASP.NET MVC</li>
+            <li draggable="true" id="li2" (dragstart)="dragstart($event)">jQuery</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">.NET Core API</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">Angular 2+</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">c#</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">LINQ</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">Entity-Framework</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">SQL Server</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">ADO.NET</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">DevOps</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">Kubernates</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">JIRA</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">GIT</li>
+            <li draggable="true" id="li4" (dragstart)="dragstart($event)">TFS</li>
           </ul>
         </div>
         
         <div class="employeeContainer">
         <div class="listHeader">Your Skills</div>
-          <ul (drop)="drop($event)" (dragover)="allowDrop($event)" id="ulContainer">
-            
-          </ul>
+          <ul (drop)="drop($event)" (dragover)="dragover($event)" id="ulContainer"></ul>
         </div>
   </div>
 </div>

@@ -12,11 +12,11 @@ export class BasicDragComponent implements OnInit {
   ngOnInit() {
   }
 
-  allowDrop(ev) {
+  dragover(ev) {
     ev.preventDefault();
   }
 
-  drag(ev) {
+  dragstart(ev) {
     ev.dataTransfer.setData('liItem', ev.target.id);
   }
 
